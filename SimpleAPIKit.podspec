@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios
   s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/shiuchi/SimpleAPIKit.git" , :tag => s.version.to_s}
-  s.source_files  =  "SimpleAPIKit//Sources/**/*"
+  s.source_files  =  "SimpleAPIKit/Sources/**/*"
   s.requires_arc = true
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '(inherited)′,′LIBRARYSEARCHPATHS′=>′(inherited)', 'OTHER_LDFLAGS' => '$(inherited)' }
 end
