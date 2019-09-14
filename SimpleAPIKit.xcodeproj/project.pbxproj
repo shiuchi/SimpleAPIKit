@@ -104,11 +104,9 @@
 		F49C2834232BE3F2009F20CF /* SimpleAPIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F49C286F232C978A009F20CF /* Sources */,
 				F49C2835232BE3F2009F20CF /* SimpleAPIKit.h */,
 				F49C2836232BE3F2009F20CF /* Info.plist */,
-				F49C284C232BE430009F20CF /* APIClient.swift */,
-				F49C284E232BE4BF009F20CF /* Serializer.swift */,
-				F49C2850232BE505009F20CF /* Request.swift */,
 			);
 			path = SimpleAPIKit;
 			sourceTree = "<group>";
@@ -136,6 +134,16 @@
 				F49C286C232BF8EE009F20CF /* Hosts.swift */,
 			);
 			path = SimpleAPIKitExample;
+			sourceTree = "<group>";
+		};
+		F49C286F232C978A009F20CF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F49C284C232BE430009F20CF /* APIClient.swift */,
+				F49C284E232BE4BF009F20CF /* Serializer.swift */,
+				F49C2850232BE505009F20CF /* Request.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
