@@ -39,7 +39,6 @@ struct ExampleRequest: Request {
     var query: [String : String]? {
         return [ "city": city ]
     }
-    
     let city: String
 }
 
