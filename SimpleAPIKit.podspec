@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SimpleAPIKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "SimpleAPIKit."
   s.description  =  "SimpleAPIKit for Swift"
   s.swift_version = '5.0'
