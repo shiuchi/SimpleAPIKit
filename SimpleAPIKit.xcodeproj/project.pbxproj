@@ -21,6 +21,7 @@
 		F49C2869232BF545009F20CF /* ExampleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C2868232BF545009F20CF /* ExampleRequest.swift */; };
 		F49C286B232BF55D009F20CF /* ExampleNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C286A232BF55D009F20CF /* ExampleNetworkClient.swift */; };
 		F49C286D232BF8EE009F20CF /* Hosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C286C232BF8EE009F20CF /* Hosts.swift */; };
+		F49C28D8232E631B009F20CF /* DataSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C28D7232E631B009F20CF /* DataSerializerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F49C2868232BF545009F20CF /* ExampleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequest.swift; sourceTree = "<group>"; };
 		F49C286A232BF55D009F20CF /* ExampleNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNetworkClient.swift; sourceTree = "<group>"; };
 		F49C286C232BF8EE009F20CF /* Hosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hosts.swift; sourceTree = "<group>"; };
+		F49C28D7232E631B009F20CF /* DataSerializerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSerializerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F49C2840232BE3F2009F20CF /* SimpleAPIKitTests.swift */,
+				F49C28D7232E631B009F20CF /* DataSerializerTest.swift */,
 				F49C2842232BE3F2009F20CF /* Info.plist */,
 			);
 			path = SimpleAPIKitTests;
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49C2841232BE3F2009F20CF /* SimpleAPIKitTests.swift in Sources */,
+				F49C28D8232E631B009F20CF /* DataSerializerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +482,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleAPIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +510,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleAPIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

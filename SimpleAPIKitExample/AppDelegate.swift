@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func setup(_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
-        APIClient.shared.logic = URLSessionClient()
+        APIClient.shared.logic = ExampleNetworkClient()
     }
 
 }

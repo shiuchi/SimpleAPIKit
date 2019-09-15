@@ -33,6 +33,7 @@ extension Request {
     public var header: [String: String]? { return nil }
     var httpBody: Data? { return nil }
     var method: HTTPMethod { return .get }
+    var schame: Schame { return .https }
     public var url: URL {
         let urlString =  schame.rawValue + hosts.rawValue + path
         var urlComponents = URLComponents(string: urlString)!
@@ -51,7 +52,7 @@ extension Request {
 public struct Hosts: RawRepresentable {
     public typealias RawValue = String
     public let rawValue: RawValue
-    public init(rawValue: String) {
+    public init(rawValue: RawValue) {
         self.rawValue = rawValue
     }
     
@@ -66,11 +67,15 @@ public struct Schame: RawRepresentable {
     public init(rawValue: RawValue) {
         self.rawValue = rawValue
     }
+    
+    public init(_ rawValue: RawValue) {
+        self.rawValue = rawValue
+    }
 }
 
 public extension Schame {
-    static let http = Schame(rawValue: "http://")
-    static let https = Schame(rawValue: "https://")
+    static let http = Schame("http://")
+    static let https = Schame("https://")
 }
 
 public enum HTTPMethod: String {

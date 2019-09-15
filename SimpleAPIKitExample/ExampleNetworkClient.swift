@@ -9,9 +9,9 @@
 import Foundation
 import SimpleAPIKit
 
-final class URLSessionClient: NetworkClient {
+final public class ExampleNetworkClient: NetworkClient {
     
-    func send<T>(request: T, completion: @escaping (Result<T.Response, Error>) -> Void) where T : Request {
+    public func send<T>(request: T, completion: @escaping (Result<T.Response, Error>) -> Void) where T : Request {
         let url = request.url
         let urlRequest = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: urlRequest) { [weak self] data, response, error in
